@@ -56,8 +56,8 @@ const Navbar = () => {
           <button
             className="bg-red-600 text-white rounded-md px-4 py-2"
             onClick={() => {
-              dispatch(logout());
               router.push("/login");
+              dispatch(logout());
             }}
           >
             logout
