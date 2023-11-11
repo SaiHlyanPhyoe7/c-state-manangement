@@ -56,26 +56,17 @@ const InfiniteScroll = () => {
           )}
         </button>
       </div>
-      <div className="max-w-[90%] mx-auto max-h-[700px] border border-red-400 overflow-auto">
+      <div className="max-w-[90%] mx-auto max-h-[700px] border border-red-400 rounded-md overflow-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50 sticky top-0 z-10">
-            <tr>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
+            <tr className="text-indigo-500 font-semibold text-sm tracking-wider">
+              <th scope="col" className="px-6 py-3 text-left uppercase">
                 Player Name
               </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
+              <th scope="col" className="px-6 py-3 text-left uppercase">
                 Position
               </th>
-              <th
-                scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-              >
+              <th scope="col" className="px-6 py-3 text-left uppercase">
                 Team
               </th>
               {/* Add more table headers as needed */}

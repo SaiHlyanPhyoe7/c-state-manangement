@@ -1,10 +1,10 @@
-import Navbar from "@/components/navbar";
+"use client";
 import ShowTeamHome from "@/components/showTeam";
+import { RootState } from "@/redux/store";
+import { useSelector } from "react-redux";
 
 export default function Home() {
-  return (
-    <div className="mt-20">
-      <ShowTeamHome />
-    </div>
-  );
+  const username = useSelector((state: RootState) => state.auth.username);
+
+  return <div className="mt-20">{username && <ShowTeamHome />}</div>;
 }

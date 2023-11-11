@@ -26,6 +26,7 @@ export const AuthProvider = ({ children }: childrenProps) => {
     return (
       <Box>
         <Loader />
+        loading...
       </Box>
     );
   }
