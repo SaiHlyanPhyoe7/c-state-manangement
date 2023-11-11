@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "@/redux/feature/auth/loginSlice";
 import { useRouter } from "next/navigation";
-import { Box, Loader } from "@mantine/core";
 import { childrenProps } from "@/types";
 
 export const AuthProvider = ({ children }: childrenProps) => {
@@ -23,13 +22,8 @@ export const AuthProvider = ({ children }: childrenProps) => {
   }, [dispatch, router]);
 
   if (loading) {
-    return (
-      <Box>
-        <Loader />
-        loading...
-      </Box>
-    );
+    return <div>loading...</div>;
   }
 
-  return <Box>{children}</Box>;
+  return <div>{children}</div>;
 };
